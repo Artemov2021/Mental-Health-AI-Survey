@@ -25,7 +25,7 @@ app.post("/submit", async (req, res) => {
     const { name, email } = req.body;
 
     await pool.query(
-      "INSERT INTO testers (name, email) VALUES ($1, $2)",
+      "INSERT INTO test_participants (name, email) VALUES ($1, $2)",
       [name, email]
     );
 
