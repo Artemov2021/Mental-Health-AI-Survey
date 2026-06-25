@@ -13,7 +13,7 @@ export default function App() {
 
     if (!name || !email || !agreed) return;
 
-    const res = await fetch("https://supportive-fascination-production-70fc.up.railway.app/submit", {
+    const res = await fetch("https://mental-health-ai-survey-production.up.railway.app/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
