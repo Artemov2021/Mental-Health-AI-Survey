@@ -5,6 +5,7 @@ const app = express();
 const cors = require("cors");
 const { Pool } = require("pg");
 
+const PORT = process.env.PORT || 3000;
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
   ssl: {
@@ -35,6 +36,6 @@ app.post("/submit", async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-    console.log("Backend running");
+app.listen(PORT, () => {
+  console.log(`Backend running on ${PORT}`);
 });
