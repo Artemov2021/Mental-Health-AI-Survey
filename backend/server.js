@@ -12,7 +12,10 @@ const pool = new Pool({
   }
 });
 
-app.use(cors());
+app.use(cors({
+  origin: "https://mental-health-ai-survey.vercel.app"
+}));
+
 app.use(express.json());
 
 
