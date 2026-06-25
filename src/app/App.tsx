@@ -235,7 +235,7 @@ export default function App() {
 
                 <button
                   type="submit"
-                  className="mt-1 w-full py-3 rounded-xl text-sm font-semibold text-white transition-all"
+                  className="mt-1 w-full py-3 rounded-xl text-sm font-semibold text-white cursor-pointer transition-all"
                   style={{
                     background: "#111",
                     letterSpacing: "-0.01em",
