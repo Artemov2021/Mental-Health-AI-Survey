@@ -114,6 +114,7 @@ export default function App() {
   const [agreed, setAgreed] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [showPrivacy, setShowPrivacy] = useState(false);
+  const [disabled, setDisabled] = useState(false);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -127,6 +128,8 @@ export default function App() {
       },
       body: JSON.stringify({ name, email })
     });
+
+    setDisabled(true);
 
     if (res.ok) {
       setSubmitted(true);
@@ -351,19 +354,23 @@ export default function App() {
 
                   <button
                     type="submit"
+                    disabled={disabled}
                     className="mt-1 w-full py-3 rounded-xl text-sm font-semibold text-white cursor-pointer transition-all"
                     style={{
-                      background: "#111",
+                      background: disabled ? "#777" : "#111",
                       letterSpacing: "-0.01em",
+                      cursor: disabled ? "not-allowed" : "pointer",
+                      opacity: disabled ? 0.7 : 1,
                     }}
-                    onMouseEnter={(e) =>
-                      (e.currentTarget.style.background = "#333")
-                    }
-                    onMouseLeave={(e) =>
-                      (e.currentTarget.style.background = "#111")
-                    }
+                    //onClick={() => setDisabled(true)}
+                    onMouseEnter={(e) => {
+                      if (!disabled) e.currentTarget.style.background = "#333";
+                    }}
+                    onMouseLeave={(e) => {
+                      if (!disabled) e.currentTarget.style.background = "#111";
+                    }}
                   >
-                    Join the beta
+                    {disabled ? "Submitted" : "Join the beta"}
                   </button>
                 </form>
               </>
