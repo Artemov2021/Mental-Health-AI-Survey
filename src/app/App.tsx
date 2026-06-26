@@ -121,6 +121,8 @@ export default function App() {
 
     if (!name || !email || !agreed) return;
 
+    setDisabled(true);
+
     const res = await fetch("https://mental-health-ai-survey-production.up.railway.app/submit", {
       method: "POST",
       headers: {
@@ -128,8 +130,6 @@ export default function App() {
       },
       body: JSON.stringify({ name, email })
     });
-
-    setDisabled(true);
 
     if (res.ok) {
       setSubmitted(true);
