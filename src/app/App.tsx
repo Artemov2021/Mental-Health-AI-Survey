@@ -71,8 +71,7 @@ function PrivacyPolicyModal({ onClose }: { onClose: () => void }) {
             <p>
               All data is stored on encrypted servers. Access is restricted to
               authorised team members only. We retain your data for as long as
-              you are an active participant, or up to 12 months after the beta
-              concludes.
+              you are an active participant.
             </p>
           </section>
 
@@ -83,9 +82,9 @@ function PrivacyPolicyModal({ onClose }: { onClose: () => void }) {
             <p>
               You may request deletion of your data at any time by emailing{" "}
               <span className="text-gray-900 font-medium">
-                privacy@mentalhealthai.co
+                hnmtrn107@gmail.com
               </span>
-              . We will process your request within 30 days.
+              .
             </p>
           </section>
 
@@ -97,7 +96,7 @@ function PrivacyPolicyModal({ onClose }: { onClose: () => void }) {
               If you have any questions about this policy, reach out to Hai Nam
               at{" "}
               <span className="text-gray-900 font-medium">
-                hainam@mentalhealthai.co
+                hnmtrn107@gmail.com
               </span>
               .
             </p>
