@@ -27,7 +27,7 @@ function PrivacyPolicyModal({ onClose }: { onClose: () => void }) {
           </h2>
           <button
             onClick={onClose}
-            className="w-8 h-8 rounded-full flex items-center justify-center transition-colors hover:bg-gray-100"
+            className="w-8 h-8 rounded-full flex items-center justify-center transition-colors cursor-pointer hover:bg-gray-100"
           >
             <X size={16} className="text-gray-500" />
           </button>
