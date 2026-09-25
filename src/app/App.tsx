@@ -211,43 +211,6 @@ export default function App() {
                   Want to participate in testing?
                 </p>
 
-                {/* What to expect list */}
-                <div className="flex flex-col gap-3 mb-6">
-                  <div className="flex items-start gap-3">
-                    <span
-                      className="flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center text-base"
-                      style={{ background: "#f5f0ff" }}
-                    >
-                      🧠
-                    </span>
-                    <p className="text-sm text-gray-600 leading-snug pt-0.5">
-                      Try our <span className="font-semibold text-gray-900">AI-powered</span> mental wellness companion
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span
-                      className="flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center text-base"
-                      style={{ background: "#f5f0ff" }}
-                    >
-                      💬
-                    </span>
-                    <p className="text-sm text-gray-600 leading-snug pt-0.5">
-                      Share <span className="font-semibold text-gray-900">honest feedback</span> to shape the product
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span
-                      className="flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center text-base"
-                      style={{ background: "#f5f0ff" }}
-                    >
-                      🔒
-                    </span>
-                    <p className="text-sm text-gray-600 leading-snug pt-0.5">
-                      Your data stays <span className="font-semibold text-gray-900">private and secure</span>, always
-                    </p>
-                  </div>
-                </div>
-
                 {/* Divider */}
                 <div className="border-t border-gray-100 mb-5" />
 
